@@ -1,45 +1,15 @@
-class ILoveNumbers {
+function a() {
 
-    constructor(num) {
+    let value = 1
 
-        this.anothernum = num
+    return () => value++
 
-    }
+}
 
-    getNum() {
+const func = a()
 
-        console.log(this.anothernum)
+func() // 1
 
-    }
+func() // 2
 
-};
-
-class IHateNumbers extends ILoveNumbers {
-
-    constructor(num) {
-
-        super(num ** num)
-
-        this.num = num
-
-    }
-
-    getNum() {
-
-        console.log(this.num)
-
-    }
-
-    getNumFromParent() {
-
-        console.log(super.getNum())
-
-    }
-
-};
-
-let obj = new IHateNumbers(5)
-
-obj.getNum()
-
-obj.getNumFromParent()
+func() // 3
