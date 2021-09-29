@@ -1,13 +1,3 @@
-const arr = [{
-    name: "Mehul Mohan",
-    country: "India"
-}, {
-    name: "James Paul",
-    country: "USA"
-}]
+x = [1, 2, 3, 4, 5]
 
-const component = arr.map(name => arr.name)
-
-console.log(component)
-
-console.log(arr)
+x.reduce((acc, val) => acc + val, 0)
