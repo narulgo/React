@@ -1,0 +1,43 @@
+<!doctype HTML>
+
+<html>
+
+<head>
+
+    <title>React hello world</title>
+
+</head>
+
+<body>
+
+    <div id="root"></div>
+
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script type="text/babel">
+
+        class HelloWorld extends React.Component {
+
+            render() {
+
+                return (<p>Hello world</p>);
+
+            }
+
+        }
+
+        ReactDOM.render(
+
+            <HelloWorld />,
+
+            document.getElementById('root')
+
+        );
+
+    </script>
+
+</body>
