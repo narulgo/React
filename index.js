@@ -1,19 +1,13 @@
-const obj = {
+const arr = [{
+    name: "Mehul Mohan",
+    country: "India"
+}, {
+    name: "James Paul",
+    country: "USA"
+}]
 
-    myFunction: function () {
+const component = arr.map(name => arr.name)
 
-        return this
+console.log(component)
 
-    },
-
-    coolFunction: () => {
-
-        return this
-
-    }
-
-}
-
-console.log(obj.myFunction())
-
-console.log(obj.coolFunction())
+console.log(arr)
